@@ -35,7 +35,7 @@ Go into the directory **make_atmos**. Run the following:
 - ./interp_fields_mio_arg.py qrclim.slt qrclim.slt.mio
 - ./interp_fields_mio_arg.py qrclim.smow qrclim.smow.mio
 - ./interp_fields_mio_arg.py qrparm.mask qrparm.mask.mio
-- /.interp_fields_mio_arg.py qrparm.soil_igbp_vg qrparm.soil_igbp_vg.mio
+- ./interp_fields_mio_arg.py qrparm.soil_igbp_vg qrparm.soil_igbp_vg.mio
 
 In each case above, the "input" is the pre-industrial ancillary file, and the "output" is the Miocene one.
 
