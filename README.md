@@ -36,3 +36,22 @@ Go into the directory **make_atmos**. Run the following:
 - ./interp_fields_mio_arg.py qrclim.smow qrclim.smow.mio
 - ./interp_fields_mio_arg.py qrparm.mask qrparm.mask.mio
 - /.interp_fields_mio_arg.py qrparm.soil_igbp_vg qrparm.soil_igbp_vg.mio
+
+In each case above, the "input" is the pre-industrial ancillary file, and the "output" is the Miocene one.
+
+## 4 Make coupler restart files
+
+Go to directory **coupler_inputs**. Run the following:
+
+- **fix_a2i_mio.py** : Adjusts a2i.nc flux file for the new mask.
+- **fix_i2a_mio.py** : Adjusts i2a.nc flux file for the new mask.
+- **fix_o2i_mio.py** : Adjusts o2i.nc flux file for the new mask.
+
+## 5 Make ocean common files
+
+Go to directory **oc_common**. Run the following:
+
+- **dust_mio.py** : Adjusts dust.nc file for new mask.
+- **fice_mio.py** : Adjusts ocmip2_fice_monthly_om1p5_bc.nc file for the new mask.
+- **press_mio.py** : Adjusts ocmip2_press_monthly_om1p5_bc.nc file for the new mask.
+- **xkw_mio.py** : Adjusts ocmip2_xkw_monthly_om1p5_bc.nc file for the new mask.
