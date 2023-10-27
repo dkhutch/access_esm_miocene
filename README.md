@@ -28,7 +28,7 @@ Go into the directory **make_coupler_grids**. Run the following:
 Go into the directory **make_atmos**. Run the following:
 
 - **make_lsm.py** : Generates a netcdf file of the new binary land-sea mask called **lsm_mio_v3.nc**, using the landfrac_um1t.nc fractional land mask.
-- **interp_fields_mio.py** : Uses nearest neighbour interpolation to create a new atmos restart file on the updated land-sea mask. This script relies on utility scripts located in:
+- **interp_fields_mio.py** : Uses nearest neighbour interpolation to create a new atmos restart file on the updated land-sea mask. The new restart file is called **restart.mio**. This script relies on utility scripts located in:
 /g/data/access/projects/access/apps/pythonlib/umfile_utils/
 - **interp_fields_mio_arg.py** : This is a command-line script (using argparse) requiring an input and output file of ancillary files. This should be done as in the following:
 - ./interp_fields_mio_arg.py cable_vegfunc_N96.anc cable_vegfunc_N96.anc.mio
