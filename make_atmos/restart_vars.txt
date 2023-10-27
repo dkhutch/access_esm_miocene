@@ -1,0 +1,272 @@
+u             :: (1, 38, 145, 192) :: Westerly component of wind  u
+v             :: (1, 38, 144, 192) :: Southerly component of wind v
+theta         :: (1, 38, 145, 192) :: Potential temperature
+sm            :: (1, 6, 145, 192)  :: Soil moisture in each (of 4) levels
+q             :: (1, 38, 145, 192) :: Specific humidity q
+QCF           :: (1, 38, 145, 192) :: QCF - Frozen cloud water
+convcldbase   :: (1, 1, 145, 192)  :: Convective cloud base level-number
+convcldtop    :: (1, 1, 145, 192)  :: Convective cloud top level-number
+field219      :: (1, 1, 145, 192)  :: Convective cloud condensed water path
+field174      :: (1, 1, 145, 192)  :: Silhouette area of unresolved orography per unit horizontal area
+field175      :: (1, 1, 145, 192)  :: Peak to trough height of unresolved orography divided by 2
+soiltemp      :: (1, 6, 145, 192)  :: Soil temperature (levels 2,3,4)
+field271      :: (1, 1, 145, 192)  :: Canopy water content
+snowdepth     :: (1, 1, 145, 192)  :: Snow depth (water equivalent)
+temp          :: (1, 1, 145, 192)  :: Temperature T
+blht          :: (1, 1, 145, 192)  :: Boundary layer height
+field324      :: (1, 1, 145, 192)  :: Surface roughness (momentum)
+ucurr         :: (1, 1, 145, 192)  :: OCuv/ Baroclinic component of zonal velocity
+vcurr         :: (1, 1, 144, 192)  :: OCuv/ Baroclinic component of meridional velocity
+lsm           :: (1, 1, 145, 192)  :: Wave/ Grid point type (sea/land/coast)
+iceconc       :: (1, 1, 145, 192)  :: Fractional sea-ice cover
+icedepth      :: (1, 1, 145, 192)  :: OCtr/ Actual ice depth.
+ht            :: (1, 1, 145, 192)  :: Height
+field150      :: (1, 1, 145, 192)  :: Standard deviation of orography
+field152      :: (1, 1, 145, 192)  :: Orography XX gradient component
+field153      :: (1, 1, 145, 192)  :: Orography XY gradient component
+field154      :: (1, 1, 145, 192)  :: Orography YY gradient component
+field329      :: (1, 1, 145, 192)  :: Wilting point
+field330      :: (1, 1, 145, 192)  :: Critical point
+field332      :: (1, 1, 145, 192)  :: Saturation
+field333      :: (1, 1, 145, 192)  :: Saturated conductivity
+field335      :: (1, 1, 145, 192)  :: Heat capacity
+field336      :: (1, 1, 145, 192)  :: Heat conductivity
+field342      :: (1, 1, 145, 192)  :: Saturated soil water suction
+field209      :: (1, 1, 145, 192)  :: Sea-ice temperature
+field569      :: (1, 1, 145, 192)  :: MAUA/ Sulphur Dioxide emissions.
+field570      :: (1, 1, 145, 192)  :: MAUA/ Dimethyl Sulphide emissions.
+O3            :: (1, 38, 145, 1)   :: MAtr/ Ozone tracer
+snowdepth_1   :: (1, 1, 145, 192)  :: Snow depth (water equivalent)
+field1374     :: (1, 38, 145, 192) :: SO4 aerosol: SO2 mass mixing ratio
+field1373     :: (1, 38, 145, 192) :: SO4 aerosol: DMS mass mixing ratio
+field1370     :: (1, 38, 145, 192) :: SO4 aerosol: Aitken mode. Units: mass mixing ratio
+field1371     :: (1, 38, 145, 192) :: SO4 aerosol: accumulation mode. Units: mass mixing ratio
+field1372     :: (1, 38, 145, 192) :: SO4 aerosol: dissolved mode. Units: mass mixing ratio
+field581      :: (1, 38, 145, 192) :: MAUA/ Hydrogen Peroxide concentration
+field1379     :: (1, 38, 145, 192) :: NH3 gas mass mass mix ratio
+field1491     :: (1, 38, 145, 192) :: Fresh soot mass mix ratio
+field1492     :: (1, 38, 145, 192) :: Aged soot mass mix ratio
+field1493     :: (1, 38, 145, 192) :: Soot in cloud mix ratio
+field1683     :: (1, 38, 145, 192) :: Mass mixing ratio fresh smoke
+field1684     :: (1, 38, 145, 192) :: Mass mixing ratio aged smoke
+field1685     :: (1, 38, 145, 192) :: Mass mixing ratio cloud smoke
+field1491_1   :: (1, 38, 145, 192) :: Fresh soot mass mix ratio
+field1491_2   :: (1, 38, 145, 192) :: Fresh soot mass mix ratio
+field1491_3   :: (1, 38, 145, 192) :: Fresh soot mass mix ratio
+field569_1    :: (1, 38, 145, 192) :: MAUA/ Sulphur Dioxide emissions.
+field580      :: (1, 38, 145, 192) :: MAUA/ Hydroxyl radical concentration molecules
+field600      :: (1, 38, 145, 192) :: MAUA/ HO2 concentration
+field581_1    :: (1, 38, 145, 192) :: MAUA/ Hydrogen Peroxide concentration
+uv            :: (1, 38, 145, 192) :: Product of wind components  u*v
+field569_2    :: (1, 1, 145, 192)  :: MAUA/ Sulphur Dioxide emissions.
+field573      :: (1, 1, 145, 192)  :: MAUA/ Soot emissions
+field574      :: (1, 1, 145, 192)  :: MAUA/ Surface emissions of biomass smoke
+field574_1    :: (1, 1, 145, 192)  :: MAUA/ Surface emissions of biomass smoke
+field575      :: (1, 1, 145, 192)  :: MAUA/ Oraganic carbon from fossil fuels (OCFF) emissions
+field573_1    :: (1, 1, 145, 192)  :: MAUA/ Soot emissions
+dz_dt         :: (1, 39, 145, 192) :: Vertical velocity  (= dz/dt)
+field1905     :: (1, 1, 180, 360)  :: Field code =  1905
+field1906     :: (1, 1, 180, 360)  :: INLAND BASIN OUTFLOW ON TRIP RIVER ROUTING GRID
+field1902     :: (1, 1, 180, 360)  :: River water storage
+field1907     :: (1, 1, 145, 192)  :: INLAND BASIN OUTFLOW ON ATMOSPHERE GRID
+field1908     :: (1, 1, 145, 192)  :: Field code =  1908
+field1909     :: (1, 1, 145, 192)  :: Field code =  1909
+solar         :: (1, 1, 145, 192)  :: Net short wave radiation flux
+solar_1       :: (1, 1, 145, 192)  :: Net short wave radiation flux
+longwave      :: (1, 1, 145, 192)  :: Net long wave radiation flux
+longwave_1    :: (1, 1, 145, 192)  :: Net long wave radiation flux
+taux          :: (1, 1, 145, 192)  :: x component of wind stress
+tauy          :: (1, 1, 144, 192)  :: y component of wind stress
+wme           :: (1, 1, 145, 192)  :: Wind mixing energy
+sh            :: (1, 1, 145, 192)  :: Sensible heat flux
+sublim        :: (1, 1, 145, 192)  :: Sublimation
+evap          :: (1, 1, 145, 192)  :: Evap from sea * leads fraction.
+field1414     :: (1, 5, 145, 192)  :: Dry deposition velocity for SO4 ACCUMULATION mode
+field1415     :: (1, 5, 145, 192)  :: Dry deposition velocity for SO4 DISSOLVED mode
+lsrain        :: (1, 1, 145, 192)  :: Dynamic rainfall rate
+lssnow        :: (1, 1, 145, 192)  :: Large scale snowfall rate mm/s
+cvrain        :: (1, 1, 145, 192)  :: Convective rainfall rate
+cvsnow        :: (1, 1, 145, 192)  :: Convective snowfall rate mm/s
+slowrunoff    :: (1, 1, 145, 192)  :: Slow runoff
+field1381     :: (1, 1, 145, 192)  :: Clapp-Hornberger B exponent
+convcldwater  :: (1, 38, 145, 192) :: Convective cloud water
+field1384     :: (1, 1, 145, 192)  :: Canopy conductance
+field1385     :: (1, 6, 145, 192)  :: Unfrozen soil moisture fraction
+field1386     :: (1, 6, 145, 192)  :: Frozen soil moisture fraction
+field1391     :: (1, 17, 145, 192) :: Fractional covering of functional types
+field1392     :: (1, 13, 145, 192) :: LAI of veg functional types
+field1393     :: (1, 13, 145, 192) :: Canopy height of vegetation functional types
+field1395     :: (1, 1, 145, 192)  :: Soil albedo
+field259      :: (1, 1, 145, 192)  :: Atmospheric energy correction (from UM 3.3)
+field1397     :: (1, 1, 145, 192)  :: Soil carbon content
+field1398     :: (1, 17, 145, 192) :: Accumulated net primary productivity on tiles
+field1500     :: (1, 13, 145, 192) :: Accumulated leaf turnover rate on PFTs
+field1502     :: (1, 17, 145, 192) :: Accumulated wood respiration on PFTs
+field1398_1   :: (1, 17, 145, 192) :: Accumulated net primary productivity on tiles
+field1504     :: (1, 17, 145, 192) :: Canopy & surface water content on tiles
+field1505     :: (1, 17, 145, 192) :: Canopy & surface capacity on tiles
+temp_1        :: (1, 17, 145, 192) :: Surface temperature on tiles
+field1511     :: (1, 17, 145, 192) :: Roughness length on tiles
+pme           :: (1, 1, 145, 192)  :: (Precipitation minus evaporation) rate
+field1579     :: (1, 17, 145, 192) :: U in the GWD surface layer
+field1580     :: (1, 17, 145, 192) :: V in the GWD surface layer
+field1581     :: (1, 1, 145, 192)  :: N in the GWD surface layer
+field1582     :: (1, 1, 145, 192)  :: GWD surface Froude number
+field1583     :: (1, 17, 145, 192) :: GWD Blocked Layer Depth
+field1560     :: (1, 1, 145, 192)  :: CO2 ocean flux
+field1561     :: (1, 1, 145, 192)  :: CO2 surface emissions
+co2           :: (1, 38, 145, 192) :: Precipitation rate codes for symbol plotting
+unspecified_1 :: (1, 38, 145, 192) :: Unspecified
+QCL           :: (1, 38, 145, 192) :: QCL - Liquid cloud water
+field7        :: (1, 39, 145, 192) :: Exner pressure
+u_1           :: (1, 38, 145, 192) :: Westerly component of wind  u
+v_1           :: (1, 38, 144, 192) :: Southerly component of wind v
+dz_dt_1       :: (1, 39, 145, 192) :: Vertical velocity  (= dz/dt)
+unspecified_2 :: (1, 1, 145, 192)  :: Unspecified
+unspecified_3 :: (1, 1, 145, 192)  :: Unspecified
+unspecified_4 :: (1, 1, 145, 192)  :: Unspecified
+unspecified_5 :: (1, 1, 145, 192)  :: Unspecified
+unspecified_6 :: (1, 1, 145, 192)  :: Unspecified
+unspecified_7 :: (1, 1, 145, 192)  :: Unspecified
+C3H7O2        :: (1, 38, 145, 192) :: C3H7O2
+cldamount     :: (1, 38, 145, 192) :: Cloud amount in a layer / at a level
+field1425     :: (1, 38, 145, 192) :: Layer liquid cloud amount in layers
+field1426     :: (1, 38, 145, 192) :: Layer frozen cloud amount in layers
+ucurr_1       :: (1, 1, 145, 192)  :: OCuv/ Baroclinic component of zonal velocity
+vcurr_1       :: (1, 1, 145, 192)  :: OCuv/ Baroclinic component of meridional velocity
+field1907_1   :: (1, 1, 145, 192)  :: INLAND BASIN OUTFLOW ON ATMOSPHERE GRID
+field385      :: (1, 38, 145, 192) :: Wave/ Height of wind-driven waves
+field1411     :: (1, 5, 145, 192)  :: RESIST_S for SO2 DISSOLVED  mode
+field1410     :: (1, 5, 145, 192)  :: RESIST_S for SO2 ACCUMULATION mode
+field1413     :: (1, 5, 145, 192)  :: Dry deposition velocity for SO4 Aitken mode
+field1412     :: (1, 5, 145, 192)  :: Dry deposition velocity for SO2
+field1630     :: (1, 1, 145, 192)  :: Soil clay fraction (ancil)
+field1631     :: (1, 1, 145, 192)  :: Soil silt fraction (ancil)
+field1632     :: (1, 1, 145, 192)  :: Soil sand fraction (ancil)
+field1633     :: (1, 1, 145, 192)  :: Soil mass fraction, dust divisions 1->6
+field1633_1   :: (1, 1, 145, 192)  :: Soil mass fraction, dust divisions 1->6
+field1633_2   :: (1, 1, 145, 192)  :: Soil mass fraction, dust divisions 1->6
+field1633_3   :: (1, 1, 145, 192)  :: Soil mass fraction, dust divisions 1->6
+field1633_4   :: (1, 1, 145, 192)  :: Soil mass fraction, dust divisions 1->6
+field1633_5   :: (1, 1, 145, 192)  :: Soil mass fraction, dust divisions 1->6
+field1634     :: (1, 38, 145, 192) :: Mineral dust mixing ratio divisions 1->6
+field1634_1   :: (1, 38, 145, 192) :: Mineral dust mixing ratio divisions 1->6
+field1634_2   :: (1, 38, 145, 192) :: Mineral dust mixing ratio divisions 1->6
+field1634_3   :: (1, 38, 145, 192) :: Mineral dust mixing ratio divisions 1->6
+field1634_4   :: (1, 38, 145, 192) :: Mineral dust mixing ratio divisions 1->6
+field1634_5   :: (1, 38, 145, 192) :: Mineral dust mixing ratio divisions 1->6
+lsm_1         :: (1, 1, 145, 192)  :: Wave/ Grid point type (sea/land/coast)
+temp_2        :: (1, 1, 145, 192)  :: Temperature T
+temp_3        :: (1, 1, 145, 192)  :: Temperature T
+temp_4        :: (1, 1, 145, 192)  :: Temperature T
+field322      :: (1, 1, 145, 192)  :: Snow free albedo (all types of land)
+field322_1    :: (1, 1, 145, 192)  :: Snow free albedo (all types of land)
+field1907_2   :: (1, 1, 145, 192)  :: INLAND BASIN OUTFLOW ON ATMOSPHERE GRID
+temp_5        :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_6        :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_7        :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_8        :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_9        :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_10       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_11       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_12       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_13       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_14       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_15       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_16       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_17       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_18       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_19       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_20       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_21       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_22       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_23       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_24       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_25       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_26       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_27       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_28       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_29       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_30       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_31       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_32       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_33       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_34       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_35       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_36       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_37       :: (1, 17, 145, 192) :: Surface temperature on tiles
+field1391_1   :: (1, 17, 145, 192) :: Fractional covering of functional types
+temp_38       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_39       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_40       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_41       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_42       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_43       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_44       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_45       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_46       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_47       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_48       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_49       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_50       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_51       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_52       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_53       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_54       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_55       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_56       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_57       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_58       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_59       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_60       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_61       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_62       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_63       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_64       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_65       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_66       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_67       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_68       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_69       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_70       :: (1, 1, 145, 192)  :: Surface temperature on tiles
+temp_71       :: (1, 1, 145, 192)  :: Surface temperature on tiles
+temp_72       :: (1, 1, 145, 192)  :: Surface temperature on tiles
+temp_73       :: (1, 1, 145, 192)  :: Surface temperature on tiles
+temp_74       :: (1, 1, 145, 192)  :: Surface temperature on tiles
+temp_75       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_76       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_77       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_78       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_79       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_80       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_81       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_82       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_83       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_84       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_85       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_86       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_87       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_88       :: (1, 17, 145, 192) :: Surface temperature on tiles
+temp_89       :: (1, 17, 145, 192) :: Surface temperature on tiles
+field1389     :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_1   :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_2   :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_3   :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_4   :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_5   :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_6   :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_7   :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_8   :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_9   :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_10  :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_11  :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_12  :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_13  :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_14  :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_15  :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_16  :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_17  :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_18  :: (1, 1, 145, 192)  :: Net Primary Productivity
+field1389_19  :: (1, 1, 145, 192)  :: Net Primary Productivity
+tracer1       :: (1, 38, 145, 192) :: MAUA/ Atmosphere tracer 1 (conventionally O3)
+tracer2       :: (1, 38, 145, 192) :: MAUA/ Atmosphere tracer 2 (conventionally H2O)
