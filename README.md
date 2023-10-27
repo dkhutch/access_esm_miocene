@@ -31,8 +31,8 @@ Go into the directory **make_atmos**. Run the following:
 - **interp_fields_mio.py** : Uses nearest neighbour interpolation to create a new atmos restart file on the updated land-sea mask. This script relies on utility scripts located in:
 /g/data/access/projects/access/apps/pythonlib/umfile_utils/
 - **interp_fields_mio_arg.py** : This is a command-line script (using argparse) requiring an input and output file of ancillary files. This should be done as in the following:
-./interp_fields_mio_arg.py cable_vegfunc_N96.anc cable_vegfunc_N96.anc.mio
-./interp_fields_mio_arg.py qrclim.slt qrclim.slt.mio
-./interp_fields_mio_arg.py qrclim.smow qrclim.smow.mio
-./interp_fields_mio_arg.py qrparm.mask qrparm.mask.mio
-/.interp_fields_mio_arg.py qrparm.soil_igbp_vg qrparm.soil_igbp_vg.mio
+- ./interp_fields_mio_arg.py cable_vegfunc_N96.anc cable_vegfunc_N96.anc.mio
+- ./interp_fields_mio_arg.py qrclim.slt qrclim.slt.mio
+- ./interp_fields_mio_arg.py qrclim.smow qrclim.smow.mio
+- ./interp_fields_mio_arg.py qrparm.mask qrparm.mask.mio
+- /.interp_fields_mio_arg.py qrparm.soil_igbp_vg qrparm.soil_igbp_vg.mio
