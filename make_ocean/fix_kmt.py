@@ -15,7 +15,6 @@ f.close()
 
 f = nc.Dataset(outfile, 'r+')
 f.history = 'fix_kmt.py \n'
-f.title = 'kmt_mio_v3.nc'
 
 kmt = f.variables['kmt']
 data = kmt[:]
