@@ -12,3 +12,4 @@ make_atmos/qrparm.soil_igbp_vg
 make_atmos/qrparm.soil_igbp_vg.mio
 make_atmos/restart.mio
 make_atmos/restart.subset
+make_atmos/restart.mio*
