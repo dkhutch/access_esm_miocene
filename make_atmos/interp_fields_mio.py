@@ -12,6 +12,9 @@ restartfile = 'restart.subset'
 new_restart = 'restart.mio'
 lsm_pi_file = 'lsm_esm1.5.nc'
 lsm_mio_file = 'lsm_mio_v3.nc'
+orog_file = 'topog_mio_atmos.nc'
+stddev_file = 'stddev_mio.nc'
+gradient_file = 'xx_yy_scaled_mio.nc'
 maskvar = 'lsm'
 netcdf_landfrac = 'landfrac_um1t.nc'
 mask_file = 'masks.nc'
@@ -42,6 +45,21 @@ f.close()
 
 f = nc.Dataset(netcdf_landfrac,'r')
 landfrac_new = f.variables['landfrac'][:]
+f.close()
+
+f = nc.Dataset(orog_file, 'r')
+topo = f.variables['topo'][:]
+f.close()
+
+f = nc.Dataset(stddev_file,'r')
+stddev = f.variables['stddev'][:]
+f.close()
+
+f = nc.Dataset(gradient_file,'r')
+grad_xx = f.variables['grad_xx'][:]
+grad_yy = f.variables['grad_yy'][:]
+silhouette = f.variables['silhouette'][:]
+peak_trough = f.variables['peak_trough'][:]
 f.close()
 
 new_ocean = np.logical_and(lsm_pi==1, lsm_mio==0)
@@ -83,6 +101,14 @@ ice_reset = [49, 415]
 ice_zeros = [31, 32, 413, 414, 416, 509]
 ice_temp = 508
 oc_curr = [28, 29, 269, 270]
+stddev_code = 34
+grad_xx_code = 35
+grad_xy_code = 36
+grad_yy_code = 37
+sil_code = 17
+peak_code = 18
+
+ice_reset_val = 271.35
 
 # orog_vars = [17, 18, 33, 34, 35, 36, 37]
 
@@ -113,6 +139,18 @@ for k in range(nvars):
             a_new = regridder(a)
             a[new_land] = a_new[new_land]
             a[new_ocean] = 0.
+        elif ilookup[ITEM_CODE] == stddev_code:
+            a[:] = stddev
+        elif ilookup[ITEM_CODE] == grad_xx_code:
+            a[:] = grad_xx
+        elif ilookup[ITEM_CODE] == grad_yy_code:
+            a[:] = grad_yy
+        elif ilookup[ITEM_CODE] == grad_xy_code:
+            a[:] = 0.
+        elif ilookup[ITEM_CODE] == sil_code:
+            a[:] = silhouette
+        elif ilookup[ITEM_CODE] == peak_code:
+            a[:] = peak_trough
         elif ilookup[LBPACK]==120:
             a_new = regridder(a)
             a[new_land] = a_new[new_land]
@@ -120,3 +158,9 @@ for k in range(nvars):
     f.writefld(a[:], k)
 f.close()
 
+''' Some river code stuff that didn't seem to work:
+river_codes = [155, 156]
+    # if ilookup[ITEM_CODE] in river_codes:
+    #     a[:] = 0.
+    #     f.ilookup[k,LBLREC] = nland
+'''
