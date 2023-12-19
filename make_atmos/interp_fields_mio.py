@@ -101,6 +101,7 @@ ice_reset = [49, 415]
 ice_zeros = [31, 32, 413, 414, 416, 509]
 ice_temp = 508
 oc_curr = [28, 29, 269, 270]
+orog_code = 33
 stddev_code = 34
 grad_xx_code = 35
 grad_xy_code = 36
@@ -135,10 +136,8 @@ for k in range(nvars):
             a[no_seaice] = fin.missval_r
         elif ilookup[ITEM_CODE] == ice_temp:
             a[:] = ice_reset_val
-        elif ilookup[ITEM_CODE] == 33:
-            a_new = regridder(a)
-            a[new_land] = a_new[new_land]
-            a[new_ocean] = 0.
+        elif ilookup[ITEM_CODE] == orog_code:
+            a[:] = topo
         elif ilookup[ITEM_CODE] == stddev_code:
             a[:] = stddev
         elif ilookup[ITEM_CODE] == grad_xx_code:
