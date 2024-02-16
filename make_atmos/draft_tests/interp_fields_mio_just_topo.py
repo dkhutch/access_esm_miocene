@@ -9,10 +9,10 @@ import xesmf as xe
 import xarray as xr
 
 restartfile = 'restart.subset'
-new_restart = 'restart.mio'
+new_restart = 'restart.mio.just_topo'
 lsm_pi_file = 'lsm_esm1.5.nc'
 lsm_mio_file = 'lsm_mio_v3.nc'
-orog_file = 'topog_mio_atmos_antarc.nc'
+orog_file = 'topog_mio_atmos.nc'
 stddev_file = 'stddev_mio.nc'
 gradient_file = 'xx_yy_scaled_mio.nc'
 maskvar = 'lsm'
@@ -111,6 +111,13 @@ peak_code = 18
 
 ice_reset_val = 271.35
 
+dum_val = 1.e-5
+stddev_val = 10.
+
+# Do a quick hack to flatten Antarctic topo
+topo[:25,:] = 10.
+topo[~land_pts] = 0.
+
 # orog_vars = [17, 18, 33, 34, 35, 36, 37]
 
 for k in range(nvars):
@@ -137,19 +144,19 @@ for k in range(nvars):
         elif ilookup[ITEM_CODE] == ice_temp:
             a[:] = ice_reset_val
         elif ilookup[ITEM_CODE] == orog_code:
-            a[:] = topo
+            a[:] = topo 
         elif ilookup[ITEM_CODE] == stddev_code:
-            a[:] = stddev
+            a[:] = stddev_val
         elif ilookup[ITEM_CODE] == grad_xx_code:
-            a[:] = grad_xx
+            a[:] = dum_val
         elif ilookup[ITEM_CODE] == grad_yy_code:
-            a[:] = grad_yy
+            a[:] = dum_val
         elif ilookup[ITEM_CODE] == grad_xy_code:
-            a[:] = 0.
+            a[:] = dum_val
         elif ilookup[ITEM_CODE] == sil_code:
-            a[:] = silhouette
+            a[:] = dum_val
         elif ilookup[ITEM_CODE] == peak_code:
-            a[:] = peak_trough
+            a[:] = stddev_val
         elif ilookup[LBPACK]==120:
             a_new = regridder(a)
             a[new_land] = a_new[new_land]

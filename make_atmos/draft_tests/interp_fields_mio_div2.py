@@ -9,10 +9,10 @@ import xesmf as xe
 import xarray as xr
 
 restartfile = 'restart.subset'
-new_restart = 'restart.mio'
+new_restart = 'restart.mio.div2'
 lsm_pi_file = 'lsm_esm1.5.nc'
 lsm_mio_file = 'lsm_mio_v3.nc'
-orog_file = 'topog_mio_atmos_antarc.nc'
+orog_file = 'topog_mio_atmos.nc'
 stddev_file = 'stddev_mio.nc'
 gradient_file = 'xx_yy_scaled_mio.nc'
 maskvar = 'lsm'
@@ -137,19 +137,19 @@ for k in range(nvars):
         elif ilookup[ITEM_CODE] == ice_temp:
             a[:] = ice_reset_val
         elif ilookup[ITEM_CODE] == orog_code:
-            a[:] = topo
+            a[:] = 0.5 * topo 
         elif ilookup[ITEM_CODE] == stddev_code:
-            a[:] = stddev
+            a[:] = 0.5 * stddev
         elif ilookup[ITEM_CODE] == grad_xx_code:
-            a[:] = grad_xx
+            a[:] = 0.5 * grad_xx
         elif ilookup[ITEM_CODE] == grad_yy_code:
-            a[:] = grad_yy
+            a[:] = 0.5 * grad_yy
         elif ilookup[ITEM_CODE] == grad_xy_code:
             a[:] = 0.
         elif ilookup[ITEM_CODE] == sil_code:
-            a[:] = silhouette
+            a[:] = 0.5 * silhouette
         elif ilookup[ITEM_CODE] == peak_code:
-            a[:] = peak_trough
+            a[:] = 0.5 * peak_trough
         elif ilookup[LBPACK]==120:
             a_new = regridder(a)
             a[new_land] = a_new[new_land]
